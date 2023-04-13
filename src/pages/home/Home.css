@@ -1,0 +1,15 @@
+
+
+.titulo{
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal); 
+    font-size: 3rem;
+    text-align: center;
+}
+
+.imagemHome{
+    width: 40% ;
+    height: 40%;
+    display: block;
+    margin: 0 auto;
+}
