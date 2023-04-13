@@ -1,112 +1,58 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import './Navbar.css';
+import React from 'react';
+import { AppBar, Toolbar, Typography} from '@material-ui/core';
+import {Box} from '@mui/material';
+import { Link } from 'react-router-dom';
+import './Navbar.css'
 
-interface Props {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window?: () => Window;
-}
-
-const drawerWidth = 240;
-const navItems = ["Home", "Postagens", "Temas", "Cadastrar Tema", "Logout"];
-
-export default function Navbar(props: Props) {
-    const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
-    };
-/* 
-! essa const drawer é a função de vizualizar no celular em menu hamburguer, 
-*/
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }} >
-            <Typography variant="h6" sx={{ my: 2 }}>
-                BlogPessoal
-            </Typography>
-            <Divider />
-            <List>
-                {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: "center" }}>
-                            <ListItemText primary={item} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-        </Box>
-    );
-
-    const container =
-        window !== undefined ? () => window().document.body : undefined;
-/* AppBar é o header, nele foi colocado a classe navbar para mudar a cor padrão para amarelo*/
+function Navbar() {
     return (
-        <Box sx={{ display: "flex" }} >
-            <CssBaseline /> 
-            <AppBar component="nav" style={{backgroundColor: "var(--cor-destaque)"}}> 
-                <Toolbar> 
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: "none" } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography
-                        variant="h4"
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-                    >
-                        BlogPessoal
-                    </Typography> 
-                    <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                        {navItems.map((item) => (
-                            <Button key={item} sx={{ color: "#FBFEED", fontSize:"1rem", fontWeight:"700", }} className="item" > 
-                                {item}
-                            </Button> /* Cor das letras no item no menu */
-                        ))}
+        <>
+            <AppBar position="static">
+                <Toolbar variant="dense" style={{backgroundColor:"var(--cor-principal)", justifyContent:'space-around'}} >
+                    <Box style={{ cursor: "pointer" }} >
+                        <Typography variant="h5" color="inherit">
+                            BlogPessoal
+                        </Typography>
                     </Box>
+
+                    <Box display="flex" justifyContent="start">
+                        <Link to='/home' className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer", color: "white" }}>
+                                <Typography variant="h6" color="inherit">
+                                    Home
+                                </Typography>
+                            </Box>
+                        </Link>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Postagens
+                            </Typography>
+                        </Box>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Temas
+                            </Typography>
+                        </Box>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Cadastrar tema
+                            </Typography>
+                        </Box>
+                        <Link to='/login' className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer", color: "white" }}>
+                                <Typography variant="h6" color="inherit">
+                                    Logout
+                                </Typography>
+                            </Box>
+                        </Link>
+                        
+                    </Box>
+
                 </Toolbar>
             </AppBar>
-            <Box component="nav">
-                <Drawer
-                    container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
-                        display: { xs: "block", sm: "none" },
-                        "& .MuiDrawer-paper": {
-                            boxSizing: "border-box",
-                            width: drawerWidth,
-                        },
-                    }}
-                >
-                    {drawer}
-                </Drawer>
-            </Box>
-        </Box>
-    );
+        </>
+    )
 }
+
+export default Navbar;
+
