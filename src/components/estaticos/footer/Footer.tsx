@@ -2,6 +2,7 @@ import { Grid, Box, Typography } from "@mui/material";
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import './Footer.css'
 
 function Footer() {
     return (
@@ -13,7 +14,7 @@ function Footer() {
                 alignItems="center"
             >
                 <Grid alignItems="center" item xs={12}>
-                    <Box style={{ backgroundColor: "var(--cor-destaque)", height: "40%" }}>
+                    <Box className="box1">
                         <Box
                             paddingTop={1}
                             display="flex"
@@ -24,7 +25,7 @@ function Footer() {
                                 variant="h5"
                                 align="center"
                                 gutterBottom
-                                style={{ color: "white" }}
+                                className="textos"
                             >
                                 Siga-me nas redes sociais{" "}
                             </Typography>
@@ -34,23 +35,23 @@ function Footer() {
                                 href="https://www.linkedin.com/in/samantha-alexandra-pereira/"
                                 target="_blank"
                             >
-                                <LinkedInIcon style={{ fontSize: 60, color: "white" }} />
+                                <LinkedInIcon className="redes" />
                             </a>
                             <a
                                 href="https://github.com/SammyLexa"
                                 target="_blank"
                             >
-                                <GitHubIcon style={{ fontSize: 60, color: "white" }} />
+                                <GitHubIcon className="redes" />
                             </a>
                         </Box>
                     </Box>
-                    <Box style={{ backgroundColor: "var(--cor-destaque)", height: "30%" }}>
+                    <Box className="box2">
                         <Box paddingTop={1}>
                             <Typography
                                 variant="subtitle2"
                                 align="center"
                                 gutterBottom
-                                style={{ color: "white" }}
+                                className="textos"
                             >
                                 © 2023 Copyright:
                             </Typography>
@@ -59,7 +60,7 @@ function Footer() {
                             <Typography
                                 variant="subtitle2"
                                 gutterBottom
-                                style={{ color: "white" , fontSize:"1rem"}}
+                                className="textos"
                                 align="center"
                             >
                                 Desenvolvido por Samantha Alexandra Pereira

@@ -1,0 +1,18 @@
+.box1 {
+    background-color: var(--cor-destaque);
+    height: 40%;
+}
+
+.redes {
+    font-size: 60px;
+    color: white;
+}
+
+.box2 {
+    background-color: var(--cor-destaque);
+    height: 30%;
+}
+
+.textos{
+    color: white;
+}

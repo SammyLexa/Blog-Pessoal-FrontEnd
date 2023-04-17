@@ -1,15 +1,31 @@
-
+.caixa{
+    background-color: var(--cor-secundaria) !important;
+}
 
 .titulo{
-    color: var(--cor-terciaria);
-    font-family: var(--fonte-principal); 
-    font-size: 3rem;
-    text-align: center;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.botaoHome{
+    border-color: white !important;
+    background-color: var(--cor-destaque) !important;
+    color: white !important;
+}
+
+.botaoHome:hover{
+    background-color: var(--cor-principal) !important;
+    border-color: white !important;
+    padding: 2% !important;
+}
+
+.postagens{
+    background-color: white !important;
 }
 
 .imagemHome{
-    width: 40% ;
-    height: 40%;
-    display: block;
-    margin: 0 auto;
+    width: 40% !important;
+    height: 40% !important;
+    display: block !important;
+    margin: 0 auto !important;
 }

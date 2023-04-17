@@ -2,7 +2,7 @@ import React from 'react'
 import './Login.css'
 import { Grid } from '@material-ui/core';
 import { Box, Button, TextField, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Login() {
     return (
@@ -15,21 +15,19 @@ function Login() {
                         <TextField id="senha" label="senha" variant='outlined' name='senha' type='password' margin='normal' fullWidth/>
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/home' className='text-decorator-none'>
-                                <Button type='submit' variant='contained' className='botaoLogin' style={{backgroundColor:"var(--cor-principal)", color:"black"}}>Logar</Button>
+                                <Button type='submit' variant='contained' className="botaoLogin">Logar</Button>
                             </Link>
                         </Box>
                     </form>
                     <Box display="flex" justifyContent={"center"} marginTop={2}>
                         <Box>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                            <Typography variant='subtitle1' gutterBottom align='center' >Não tem uma conta?</Typography>
                         </Box>
-                        <Typography variant='subtitle1' gutterBottom align='center' style={{fontWeight:"bold"}}>Cadastre-se</Typography>
+                        <Typography variant='subtitle1' gutterBottom align='center' className="textos"><Link to='/home' className='link'>Cadastre-se</Link></Typography>
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={12} md={6} style={{backgroundImage:'url(https://ik.imagekit.io/sammylexa/Ilustra%C3%A7%C3%B5es_do_blog/desk-g3d54fe341_1920.jpg?updatedAt=1681426924959)',
-            backgroundRepeat:"no-repeat", width:'100vh', minHeight:'100vh', backgroundPosition:"center", backgroundSize:"cover"
-        }}>
+            <Grid xs={12} md={6} className='imagemLogin'>
 
             </Grid>
         </Grid>

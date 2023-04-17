@@ -1,5 +1,40 @@
-.botaoLogin{
-    background-color: var(--cor-principal);
-    color: var(--cor-principal);
+.botaoLogin {
+    background-color: var(--cor-destaque) !important;
+    color: black !important;
+    font-weight: bold !important;
+}
 
+.botaoLogin:hover {
+    background-color: var(--cor-principal) !important;
+    border-color: black !important;
+    padding: 3% !important;
+    font-size: larger;
+    transition: 0.4s;
+}
+
+.textos {
+    font-weight: bold;
+}
+
+.link {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: white;
+    background-color: var(--cor-principal);
+    border-radius: 32px;
+    padding: 0.3rem;
+    transition: 0.4s;
+}
+
+.imagemLogin {
+    background-image: url(https://ik.imagekit.io/sammylexa/Ilustra%C3%A7%C3%B5es_do_blog/desk-g3d54fe341_1920.jpg?updatedAt=1681426924959);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
