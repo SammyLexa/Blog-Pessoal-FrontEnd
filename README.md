@@ -10,6 +10,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![AXIOS](https://img.shields.io/badge/AXIOS-%23039BE5.svg?&style=for-the-badge&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -21,29 +22,56 @@
 
 ## Introdução
 
-O software é um Blog, focado em compartilhar conhecimentos de Front-End . Capaaz de Realizar todas funções CRUD(Criar, Consultar, Atualizar e 
+O software é um Blog, focado em compartilhar conhecimentos de Front-End . Capaz de Realizar todas funções CRUD(Criar, Consultar, Atualizar e 
 Deletar).
 Criado com o objetivo de aprimorar meus conhecimentos de React, HTML, CSS, React Route, TypeScript, Material-UI(MUI).
 
 
-## Funcionalidades: CRUD (Create ![icons8-mais-2-matemática-24](https://user-images.githubusercontent.com/123910027/228411941-5a88ac9e-160e-4e6c-8304-9dd0497acb1e.png), Read ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png), Update ![icons8-atualizações-disponíveis-24](https://user-images.githubusercontent.com/123910027/228412118-d6345474-4c4f-42b6-b0e4-74ec7eb82fa6.png), Delete ![icons8-apagar-para-sempre-24](https://user-images.githubusercontent.com/123910027/228412529-99f70eef-faa4-47c5-b10e-74e0c564f1d1.png))
-- Cadastra Postagem ![icons8-mais-2-matemática-24](https://user-images.githubusercontent.com/123910027/228411941-5a88ac9e-160e-4e6c-8304-9dd0497acb1e.png)
-- Cadastra Tema ![icons8-mais-2-matemática-24](https://user-images.githubusercontent.com/123910027/228411941-5a88ac9e-160e-4e6c-8304-9dd0497acb1e.png)
-- Cadastra Usuário ![icons8-mais-2-matemática-24](https://user-images.githubusercontent.com/123910027/228411941-5a88ac9e-160e-4e6c-8304-9dd0497acb1e.png)
-- Consulta por ID de Postagem ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta por ID de Tema ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta por ID de Usuário ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta por Título de Postagem ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta por Descrição de Tema ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta Todas as Postagens ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta Todos os Temas ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Consulta Todos os Usuários ![icons8-leitura-24](https://user-images.githubusercontent.com/123910027/228411621-cc2f1a2b-640c-4dbf-aedd-bdc205167486.png)
-- Atualiza Postagem ![icons8-atualizações-disponíveis-24](https://user-images.githubusercontent.com/123910027/228412118-d6345474-4c4f-42b6-b0e4-74ec7eb82fa6.png)
-- Atualiza Tema ![icons8-atualizações-disponíveis-24](https://user-images.githubusercontent.com/123910027/228412118-d6345474-4c4f-42b6-b0e4-74ec7eb82fa6.png)
-- Atualiza Usuário ![icons8-atualizações-disponíveis-24](https://user-images.githubusercontent.com/123910027/228412118-d6345474-4c4f-42b6-b0e4-74ec7eb82fa6.png)
-- Deleta Postagem ![icons8-apagar-para-sempre-24](https://user-images.githubusercontent.com/123910027/228412529-99f70eef-faa4-47c5-b10e-74e0c564f1d1.png)
-- Deleta Tema ![icons8-apagar-para-sempre-24](https://user-images.githubusercontent.com/123910027/228412529-99f70eef-faa4-47c5-b10e-74e0c564f1d1.png)
-- Deleta Usuário ![icons8-apagar-para-sempre-24](https://user-images.githubusercontent.com/123910027/228412529-99f70eef-faa4-47c5-b10e-74e0c564f1d1.png)
+## Funcionalidades: CRUD (Create ![icons8-adicionar-24](https://user-images.githubusercontent.com/123910027/232770812-7ba047c1-c32c-4100-81c6-a0b42b77fbb5.png), Read ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232770834-b83c83d2-502f-4f57-a10e-d75f8479222b.png), Update ![icons8-atualizações-disponíveis-24 (1)](https://user-images.githubusercontent.com/123910027/232770854-83c0e42a-552c-4c60-9b88-024c493c16fc.png), Delete ![icons8-remover-24](https://user-images.githubusercontent.com/123910027/232770872-9ac6b285-0ebc-4992-9e0d-c439276bd7e1.png))
+
+- Cadastra Postagem ![icons8-adicionar-24](https://user-images.githubusercontent.com/123910027/232771378-e339dc8a-a6ec-4320-bdfb-166fb5008c8b.png)
+
+- Cadastra Tema ![icons8-adicionar-24](https://user-images.githubusercontent.com/123910027/232771387-fccc6b18-e38e-4655-8a0c-dd14478f3290.png)
+
+- Cadastra Usuário ![icons8-adicionar-24](https://user-images.githubusercontent.com/123910027/232771395-cfefe919-6de0-4278-b9ba-171dceb429eb.png)
+
+
+</br>
+
+- Consulta por ID de Postagem ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771579-5fa2ff54-eeeb-4914-a602-f346905ccdc1.png)
+
+- Consulta por ID de Tema ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771589-ae6095da-94d0-40db-a2f9-3754cbcbccb0.png)
+
+- Consulta por ID de Usuário ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771600-c835b315-e568-485f-a4f9-769f40c7110e.png)
+
+- Consulta por Título de Postagem ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771605-3308cad3-9555-45d5-bf06-2483884484ae.png)
+
+- Consulta por Descrição de Tema ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771615-961b5a6c-aec5-4cbd-bdf6-2eeda7fd3bdf.png)
+
+- Consulta Todas as Postagens ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771628-a9a1e9d4-4674-4587-b4a5-a5883803ba9d.png)
+
+- Consulta Todos os Temas ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771642-26b78943-0d06-4d6a-92d0-dbe854974336.png)
+
+- Consulta Todos os Usuários ![icons8-leitura-24 (1)](https://user-images.githubusercontent.com/123910027/232771674-28ca65bb-e6bf-4984-aeef-bf218d09c1ad.png)
+
+
+</br>
+
+- Atualiza Postagem ![icons8-atualizações-disponíveis-24 (1)](https://user-images.githubusercontent.com/123910027/232771786-fca46ebb-b127-437f-a2a8-7dc57b3375e7.png)
+
+- Atualiza Tema ![icons8-atualizações-disponíveis-24 (1)](https://user-images.githubusercontent.com/123910027/232771800-2ba4ba20-556d-4964-8a35-f2aa4cf54e15.png)
+
+- Atualiza Usuário ![icons8-atualizações-disponíveis-24 (1)](https://user-images.githubusercontent.com/123910027/232771808-7942c0fb-d789-438b-89fe-47706ee5c106.png)
+
+
+</br>
+
+- Deleta Postagem ![icons8-remover-24](https://user-images.githubusercontent.com/123910027/232771928-66f883a7-b4b8-4ec5-81d8-9fd0c4d7bc55.png)
+
+- Deleta Tema ![icons8-remover-24](https://user-images.githubusercontent.com/123910027/232771919-be6c0ae5-aa7b-41e2-8319-2a2ecad756a4.png)
+
+- Deleta Usuário ![icons8-remover-24](https://user-images.githubusercontent.com/123910027/232771910-c0133d0f-edc2-4afe-9533-99b4fa2f4ace.png)
+
 
 ## Ferramentas, Linguagens, Frameworks e Blibiotecas:
 <br>
@@ -52,6 +80,7 @@ Criado com o objetivo de aprimorar meus conhecimentos de React, HTML, CSS, React
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![AXIOS](https://img.shields.io/badge/AXIOS-%23039BE5.svg?&style=for-the-badge&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
