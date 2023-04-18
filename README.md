@@ -10,6 +10,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![AXIOS](https://img.shields.io/badge/AXIOS-%23039BE5.svg?&style=for-the-badge&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -21,7 +22,7 @@
 
 ## Introdução
 
-O software é um Blog, focado em compartilhar conhecimentos de Front-End . Capaaz de Realizar todas funções CRUD(Criar, Consultar, Atualizar e 
+O software é um Blog, focado em compartilhar conhecimentos de Front-End . Capaz de Realizar todas funções CRUD(Criar, Consultar, Atualizar e 
 Deletar).
 Criado com o objetivo de aprimorar meus conhecimentos de React, HTML, CSS, React Route, TypeScript, Material-UI(MUI).
 
@@ -52,6 +53,7 @@ Criado com o objetivo de aprimorar meus conhecimentos de React, HTML, CSS, React
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![AXIOS](https://img.shields.io/badge/AXIOS-%23039BE5.svg?&style=for-the-badge&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
