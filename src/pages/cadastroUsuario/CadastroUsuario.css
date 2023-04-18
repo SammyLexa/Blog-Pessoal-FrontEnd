@@ -1,0 +1,62 @@
+.botaoCadastro {
+    background-color: var(--cor-destaque) !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.botaoCadastro:hover {
+    background-color: var(--cor-principal) !important;
+    border-color: black !important;
+    padding: 3% !important;
+    font-size: larger;
+    transition: 0.4s;
+}
+
+.botaoCancelar {
+    background-color: rgb(255, 48, 48) !important;
+    color: white;
+    font-weight: bold !important;
+}
+
+.botaoCancelar:hover {
+    background-color: red !important;
+    color: black;
+    border-color: black !important;
+    padding: 3% !important;
+    font-size: larger;
+    transition: 0.4s;
+}
+
+.textos2 {
+    font-weight: bold !important;
+    padding-right: 1rem !important;
+}
+
+.linkCadastro {
+    color: var(--cor-principal) !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.linkCadastro:hover {
+    color: white !important;
+    background-color: var(--cor-principal) !important;
+    border-radius: 32px !important;
+    padding: 0.3rem !important;
+    transition: 0.4s !important;
+    box-shadow: 5px 10px;
+}
+
+.imagemCadastro {
+    background-image: url(https://ik.imagekit.io/sammylexa/Ilustra%C3%A7%C3%B5es_do_blog/Front-End__1_.png?updatedAt=1681773842486) !important;
+    background-repeat: no-repeat !important;
+    width: 100vh !important;
+    min-height: 100vh !important;
+    background-position: cente !important;
+    background-size: cover !important;
+}
+
+.subtitulo{
+    color: var(--cor-terciaria);
+    font-size: small;
+}
