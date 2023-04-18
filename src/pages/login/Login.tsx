@@ -94,7 +94,3 @@ function Login() {
 }
 
 export default Login;
-
-function useEffect() {
-    throw new Error('Function not implemented.');
-}
