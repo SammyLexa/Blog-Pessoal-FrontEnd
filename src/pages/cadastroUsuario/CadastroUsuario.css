@@ -8,14 +8,15 @@
     background-color: var(--cor-principal) !important;
     border-color: black !important;
     padding: 3% !important;
-    font-size: larger;
-    transition: 0.4s;
+    font-size: larger !important;
+    transition: 0.4s !important;
 }
 
 .botaoCancelar {
     background-color: rgb(255, 48, 48) !important;
     color: white;
     font-weight: bold !important;
+    padding-left: 20px !important;
 }
 
 .botaoCancelar:hover {
