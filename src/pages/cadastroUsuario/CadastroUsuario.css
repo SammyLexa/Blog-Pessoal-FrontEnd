@@ -2,6 +2,7 @@
     background-color: var(--cor-destaque) !important;
     color: black !important;
     font-weight: bold !important;
+    margin-left: 20px !important;
 }
 
 .botaoCadastro:hover {
