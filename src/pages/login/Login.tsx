@@ -1,22 +1,77 @@
-import React from 'react'
+import React, { ChangeEvent, useState, useEffect } from 'react'
+
 import './Login.css'
 import { Grid } from '@material-ui/core';
 import { Box, Button, TextField, Typography } from '@mui/material';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
+
+import UserLogin from '../../models/UserLogin';
+import { api } from '../../services/Service';
 
 function Login() {
+
+    let history = useNavigate();
+
+    const [token, setToken] = useLocalStorage('token');
+
+    const [userLogin, setUserLogin] = useState<UserLogin>(
+        {
+            id: 0,
+            usuario: "",
+            senha: '',
+            foto: "",
+            token: ""
+        }
+    )
+
+    function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+
+        setUserLogin({
+            ...userLogin,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    useEffect(() => {
+        if (token !== '') {
+            history('/home')
+        }
+    }, [token])
+
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+        e.preventDefault();
+        try {
+            const resposta = await api.post('/usuarios/logar', userLogin)
+            setToken(resposta.data.token)
+
+            alert('Usuário logado com sucesso!')
+        } catch (error) {
+            alert('Dados do Usuário inconsistentes. Erro ao logar!')
+        }
+    }
+
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid xs={12} md={6} alignItems='center'>
                 <Box paddingX={{ xs: 6, md: 20 }} paddingY={{ xs: 10 }}>
-                    <form>
+                    <form onSubmit={onSubmit}>
+
                         <Typography variant='h3' gutterBottom style={{ color: "var(--cor-principal)", fontWeight: "700" }} component={"h3"} align='center'  >Entrar</Typography>
-                        <TextField id="usuario" label="usuario" variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField id="senha" label="senha" variant='outlined' name='senha' type='password' margin='normal' fullWidth />
+                        <TextField value={userLogin.usuario}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                            id="usuario" label="usuario" variant='outlined' name='usuario' margin='normal' fullWidth
+                        />
+
+                        <TextField value={userLogin.senha}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                            id="senha" label="senha" variant='outlined' name='senha' type='password' margin='normal' fullWidth
+                        />
+
                         <Box marginTop={2} textAlign='center'>
-                            <Link to='/cadastre-se' className='text-decorator-none'>
-                                <Button type='submit' variant='contained' className="botaoLogin">Logar</Button>
-                            </Link>
+
+                            <Button type='submit' variant='contained' className="botaoLogin">Logar</Button>
+
                         </Box>
                     </form>
                     <Box display="flex" justifyContent={"center"} marginTop={2}>
@@ -39,3 +94,7 @@ function Login() {
 }
 
 export default Login;
+
+function useEffect() {
+    throw new Error('Function not implemented.');
+}
