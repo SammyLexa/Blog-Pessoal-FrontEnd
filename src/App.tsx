@@ -4,8 +4,8 @@ import Footer from "./components/estaticos/footer/Footer";
 import Navbar from "./components/estaticos/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import { Grid } from "@material-ui/core";
-import CadastroUsuario from "./pages/cadastroUsuario/CadastroUsuario";
+import { Grid } from "@material-ui/core"
+import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={< Login/>} />
           <Route path="/login" element={< Login/>} />
           <Route path="/home" element={<Home />} />
-          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+          <Route path='/cadastrarUsuario' element={<CadastroUsuario />} />
         </Routes>
       </div>
       <Footer />

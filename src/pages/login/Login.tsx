@@ -78,7 +78,7 @@ function Login() {
                             <Typography variant='subtitle1' gutterBottom align='center' >Não tem uma conta?</Typography>
                         </Box>
                         <Typography variant='subtitle1' gutterBottom align='center' className="textos" marginX={"1rem"}>
-                            <Link to='/cadastrousuario' className='link'>
+                            <Link to='/cadastrarUsuario' className='link'>
                                 Cadastre-se
                             </Link>
                         </Typography>
