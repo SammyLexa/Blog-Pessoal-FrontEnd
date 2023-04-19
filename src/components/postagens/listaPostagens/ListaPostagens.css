@@ -1,0 +1,26 @@
+.botaoDeletar{
+    background-color: red;
+}
+
+.botaoAtualizar{
+    background-color: var(--cor-destaque) !important;
+}
+
+.botaoAtualizar:hover{
+    background-color: #ff9d00 !important;
+}
+
+.botaoDeletar:hover{
+    background-color: rgb(196, 6, 6) !important;
+}
+
+.bordaCard{
+    border: var(--cor-destaque) 1px solid !important;
+    border-radius: 32px !important;
+    padding: 1rem !important;
+}
+
+.tituloPostagen{
+    color: var(--cor-destaque) !important;
+    font-weight: bold !important;
+}

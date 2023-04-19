@@ -1,0 +1,17 @@
+.tituloSobre{
+    color: var(--cor-principal) !important;
+    font-weight: bold !important;
+    font-size: larger !important;
+    padding-bottom: 1rem !important;
+}
+
+.conteudoSobre{
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.descricaoSobre{
+    text-align: justify !important;
+    padding-top: 3rem !important;
+    font-size: 1.3rem !important;
+}

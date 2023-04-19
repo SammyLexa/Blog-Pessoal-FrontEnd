@@ -3,6 +3,8 @@ import 'react'
 import {Paper} from '@material-ui/core';
 import Box from '@mui/material/Box';
 import { Button, Grid, Typography } from '@mui/material';
+import TabPostagens from '../../components/postagens/tabPostagens/TabPostagens';
+
 
 function Home(){
     return(
@@ -23,6 +25,7 @@ function Home(){
                     <img src="https://ik.imagekit.io/sammylexa/Ilustra%C3%A7%C3%B5es_do_blog/blog-ilustracao.svg?updatedAt=1681314047403" alt="Imagem da Tela Inicial, uma mulher digitando no computador" className='ilustracaoHome' />
                 </Grid>
                 <Grid xs={12} className="postagens">
+                    <TabPostagens />
                 </Grid>
             </Grid>
         </>

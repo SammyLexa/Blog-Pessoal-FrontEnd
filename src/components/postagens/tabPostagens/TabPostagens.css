@@ -1,0 +1,4 @@
+.tabBarra{
+    background-color: var(--cor-principal) !important;
+    justify-content: center;
+}

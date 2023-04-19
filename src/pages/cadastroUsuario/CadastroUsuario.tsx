@@ -72,6 +72,7 @@ function CadastroUsuario() {
                         <TextField value={user.usuario} required type="email" onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
 
                         <TextField value={user.senha} required onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                        <Typography className='subtitulo'>*Deve conter pelo menos 8 caracteres</Typography>
 
                         <TextField value={confirmarSenha} required onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
 

@@ -48,9 +48,9 @@ table {
 /*Fim do Reset de css*/
 
 body{
-	font-family: var(--fonte-principal); 
-	box-sizing: border-box;
-	text-decoration: none;
+	font-family: var(--fonte-principal) !important; 
+	box-sizing: border-box !important;
+	text-decoration: none !important;
 }
 
 .text-decorator-none{
