@@ -24,8 +24,8 @@ function TabPostagens() {
     <>
       <Grid>
         <TabContext value={value}>
-          <AppBar position="static" className='tabBarra'>
-            <TabList onChange={handleChange} aria-label="simple tabs example" className='barra'>
+          <AppBar position="static" className='tabBarra' >
+            <TabList onChange={handleChange} aria-label="simple tabs example" className='barra' centered>
               <Tab label="Postagens" value="1" />
               <Tab label="Sobre o Projeto" value="2" />
               <Tab label="Sobre mim" value="3" />
