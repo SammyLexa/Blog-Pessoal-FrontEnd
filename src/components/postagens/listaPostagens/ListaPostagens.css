@@ -23,4 +23,23 @@
 .tituloPostagen{
     color: var(--cor-destaque) !important;
     font-weight: bold !important;
+    font-size: 2.7rem !important;
+}
+
+.textoPostagem{
+    font-size: 1.7rem !important;
+}
+
+
+.Postagens{
+    font-size: 2rem !important;
+    font-weight: bold !important;
+}
+
+.temaLabel{
+    color: black !important;
+    margin-top: 1rem !important;
+    font-size: 1.3rem !important;
+    background-color: var(--cor-principal) !important;
+    text-align: center !important;
 }

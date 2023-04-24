@@ -1,10 +1,22 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, renderMatches } from 'react-router-dom';
 import './Navbar.css'
+import { useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 
 function Navbar() {
+
+    const [token, setToken] = useLocalStorage('token');
+    let history = useNavigate();
+
+    function goLogout() {
+        setToken('')
+        alert('Usuário deslogado')
+        history('/login')
+    }
+
     return (
         <>
             <AppBar position="static">
@@ -41,17 +53,26 @@ function Navbar() {
                         </Box>
 
                         <Box mx={1} >
-                            <Typography variant="h6" color="inherit">
-                                Cadastrar tema
-                            </Typography>
-                        </Box>
-
-                        <Box mx={1}>
-                            <Link to='/login' className='cursor text-decorator-none' >
+                            <Link to='/formularioTema' className='cursor text-decorator-none'>
                                 <Typography variant="h6" color="inherit">
-                                    Logout
+                                    Cadastrar tema
                                 </Typography>
                             </Link>
+                        </Box>
+                        
+                        <Box mx={1} >
+                            <Link to='/formularioPostagem' className='cursor text-decorator-none'>
+                                <Typography variant="h6" color="inherit">
+                                    Cadastrar Postagem
+                                </Typography>
+                            </Link>
+                        </Box>
+                        <Box mx={1} onClick={goLogout}>
+
+                            <Typography variant="h6" color="inherit">
+                                Logout
+                            </Typography>
+
                         </Box>
 
 

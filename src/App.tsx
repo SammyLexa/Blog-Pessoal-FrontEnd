@@ -8,7 +8,10 @@ import { Grid } from "@material-ui/core"
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario'
 import ListaTemas from "./components/temas/listaTemas/ListaTemas";
 import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens";
-
+import CadastroTema from "./components/temas/cadastrarTema/CadastroTema";
+import DeletarTema from "./components/temas/deletarTema/DeletarTema";
+import DeletarPostagem from "./components/postagens/deletarPost/DeletarPostagem";
+import CadastroPost from "./components/postagens/cadastroPost/CadastroPost";
 
 function App() {
   return (
@@ -22,6 +25,13 @@ function App() {
           <Route path='/cadastrarUsuario' element={<CadastroUsuario />} />
           <Route path="/temas" element={<ListaTemas/>} />
           <Route path="/postagens" element={<ListaPostagens />} />
+          <Route path="/formularioPostagem" element={<CadastroPost />} />
+          <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
+          <Route path="/formularioTema" element={<CadastroTema />} />
+          <Route path="/formularioTema/:id" element={<CadastroTema />} />
+          <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+          <Route path="/deletarTema/:id" element={<DeletarTema />} />
+
         </Routes>
       </div>
       <Footer />

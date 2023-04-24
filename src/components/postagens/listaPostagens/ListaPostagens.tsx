@@ -34,31 +34,34 @@ function ListaPostagem() {
     }, [posts.length])
     return (
         <>
+            {posts.length === 0 && (<div className="lds-ring centro"><div></div><div></div><div></div></div>)}
             {
                 posts.map(post => (
                     <Grid container direction={'column'}>
                         <Box m={2}>
                             <Card variant="elevation" elevation={10} className='bordaCard'>
                                 <CardContent>
-                                    <Typography color="textSecondary" gutterBottom>
+                                    <Typography color="textSecondary" gutterBottom className='Postagens'>
                                         Postagens
                                     </Typography>
                                     <Typography variant="h5" component="h2" className='tituloPostagen'>
                                         {post.titulo}
                                     </Typography>
-                                    <Typography variant="body2" component="p">
+                                    <Typography variant="body2" component="p" className='textoPostagem'>
                                         {post.texto}
                                     </Typography>
-                                    <Typography variant="body2" component="p">
+
+                                    <Typography variant="body2" component="p" className='temaLabel'>
                                         {post.tema?.descricao}
                                     </Typography>
+
                                 </CardContent>
                                 <CardActions>
-                                    <Box display="flex" justifyContent="center" mb={1.5}>
+                                    <Box display="flex" justifyContent="center" mb={1.5} >
 
                                         <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                                             <Box mx={1}>
-                                                <Button variant="contained" size='small' className="botaoAtualizar" >
+                                                <Button variant="contained" size='small' className="botaoAtualizar">
                                                     atualizar
                                                 </Button>
                                             </Box>

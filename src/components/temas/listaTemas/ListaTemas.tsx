@@ -36,10 +36,11 @@ function ListaTemas() {
 
     return (
         <>
+            {temas.length === 0 && (<div className="lds-ring"><div></div><div></div><div></div></div>)}
             {
                 temas.map(tema => (
-                    <Grid container direction={'row'}>
-                        <Box m={2} >
+                    <Grid container direction={'row'} flexWrap={'wrap'} justifyContent={'center'}>
+                        <Box m={2}>
                             <Card variant="elevation" elevation={10} className='bordaCard'>
                                 <CardContent>
                                     <Typography color="textSecondary" gutterBottom>
@@ -77,4 +78,4 @@ function ListaTemas() {
     )
 }
 
-export default ListaTemas
+export default ListaTemas;
