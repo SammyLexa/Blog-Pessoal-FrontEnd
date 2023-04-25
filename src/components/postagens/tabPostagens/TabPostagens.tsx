@@ -19,7 +19,6 @@ function TabPostagens() {
     setValue(newValue);
   };
 
-  // TabIndicatorProps={{style: {display: 'none'}}}
   return (
     <>
       <Grid>

@@ -1,0 +1,11 @@
+.botao{
+    background-color: var(--cor-destaque) !important;
+    color: white !important;
+}
+
+.botao:hover{
+    background-color: var(--cor-principal) !important;
+    border-color: white !important;
+    color: black !important;
+    transition: 1s !important;
+}

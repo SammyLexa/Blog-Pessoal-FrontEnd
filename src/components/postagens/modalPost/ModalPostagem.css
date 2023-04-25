@@ -1,0 +1,13 @@
+.botaoModal{
+    border-color: white !important;
+    background-color: var(--cor-destaque) !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.botaoModal:hover{
+    background-color: var(--cor-principal) !important;
+    border-color: white !important;
+    color: black !important;
+    transition: 1s !important;
+}

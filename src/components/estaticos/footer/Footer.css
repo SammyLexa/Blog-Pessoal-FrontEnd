@@ -1,5 +1,5 @@
 .box1 {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-destaque);
     height: 40%;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .box2 {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-destaque);
     height: 30%;
 }
 

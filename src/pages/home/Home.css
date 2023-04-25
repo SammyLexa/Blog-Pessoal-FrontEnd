@@ -11,12 +11,14 @@
     border-color: white !important;
     background-color: var(--cor-destaque) !important;
     color: white !important;
+    font-weight: bold !important;
 }
 
 .botaoHome:hover{
     background-color: var(--cor-principal) !important;
     border-color: white !important;
-    padding: 2% !important;
+    color: black !important;
+    transition: 1s !important;
 }
 
 .postagens{

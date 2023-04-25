@@ -4,11 +4,11 @@
 }
 
 .navbar{
-    background-color: var(--cor-principal);
+    background-color: var(--cor-destaque);
     justify-content:space-around ;
 }
 
-.item:hover{
-    color: var(--cor-terciaria);
-    transition: 1s;
+.cursor:hover{
+    color:black !important;
+    transition: 1s !important;
 }

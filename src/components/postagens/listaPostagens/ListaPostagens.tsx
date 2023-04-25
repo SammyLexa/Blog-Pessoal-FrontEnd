@@ -54,6 +54,9 @@ function ListaPostagem() {
                                     <Typography variant="body2" component="p" className='temaLabel'>
                                         {post.tema?.descricao}
                                     </Typography>
+                                    <Typography variant="body2" component="p" className='textoPostagem' paddingTop={2}>
+                                    Data: {Intl.DateTimeFormat('pt-BR', {dateStyle: 'full', timeStyle: 'short'}).format(new Date(post.data))}
+                                    </Typography>
 
                                 </CardContent>
                                 <CardActions>
