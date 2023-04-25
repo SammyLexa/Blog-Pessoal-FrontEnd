@@ -4,16 +4,16 @@ import './Login.css'
 import { Grid } from '@material-ui/core';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
-
 import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
 
 function Login() {
 
     let history = useNavigate();
-
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] = useState('');
 
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
@@ -35,6 +35,7 @@ function Login() {
 
     useEffect(() => {
         if (token !== '') {
+            dispatch(addToken(token));
             history('/home')
         }
     }, [token])

@@ -4,7 +4,6 @@ import Footer from "./components/estaticos/footer/Footer";
 import Navbar from "./components/estaticos/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import { Grid } from "@material-ui/core"
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario'
 import ListaTemas from "./components/temas/listaTemas/ListaTemas";
 import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens";
@@ -12,9 +11,12 @@ import CadastroTema from "./components/temas/cadastrarTema/CadastroTema";
 import DeletarTema from "./components/temas/deletarTema/DeletarTema";
 import DeletarPostagem from "./components/postagens/deletarPost/DeletarPostagem";
 import CadastroPost from "./components/postagens/cadastroPost/CadastroPost";
+import { Provider } from "react-redux";
+import store from "./store/store";
 
 function App() {
   return (
+    <Provider store={store}>
     <BrowserRouter>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
@@ -36,6 +38,7 @@ function App() {
       </div>
       <Footer />
     </BrowserRouter>
+    </Provider>
   );
 }
 
