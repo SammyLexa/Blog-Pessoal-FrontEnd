@@ -9,3 +9,11 @@
     color: black !important;
     transition: 1s !important;
 }
+
+.topo{
+    border: var(--cor-principal) 3px solid !important;
+    padding: 5% !important;
+    box-shadow: -1px 0px 5px 9px rgba(65, 64, 64, 0.78) !important;
+-webkit-box-shadow: -1px 0px 5px 9px rgba(65, 64, 64, 0.78) !important;
+-moz-box-shadow: -1px 0px 5px 9px rgba(65, 64, 64, 0.78) !important;
+}

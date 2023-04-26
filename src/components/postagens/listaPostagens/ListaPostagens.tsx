@@ -2,17 +2,20 @@ import React, { useEffect, useState } from 'react'
 import './ListaPostagens.css'
 import { Box, Card, CardContent, Typography, CardActions, Button, Grid } from '@mui/material'
 import { Link, useNavigate } from 'react-router-dom'
-import { busca } from '../../../services/Service'
+import { busca, login } from '../../../services/Service';
 import Postagem from '../../../models/Postagens'
 import { useSelector } from 'react-redux'
 import { TokenState } from '../../../store/tokens/tokensReducer'
+import UserLogin from '../../../models/UserLogin';
+import User from '../../../models/User';
 
 function ListaPostagem() {
     const [posts, setPosts] = useState<Postagem[]>([])
+    const [userLogin, setUserLogin] = useState<UserLogin[]>([])
     let navigate = useNavigate();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
     useEffect(() => {
         if (token == "") {
@@ -58,8 +61,12 @@ function ListaPostagem() {
                                         {post.tema?.descricao}
                                     </Typography>
                                     <Typography variant="body2" component="p" className='textoPostagem' paddingTop={2}>
-                                    Data: {Intl.DateTimeFormat('pt-BR', {dateStyle: 'full', timeStyle: 'short'}).format(new Date(post.data))}
+                                        Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'full', timeStyle: 'short' }).format(new Date(post.data))}
                                     </Typography>
+                                    <Typography variant="body2" component="p">
+                                        Postado por: {post.usuario?.nome}
+                                    </Typography>
+
 
                                 </CardContent>
                                 <CardActions>

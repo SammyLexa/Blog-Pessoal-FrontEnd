@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import './cadastroTema.css'
-import { Container, Typography, TextField, Button } from '@mui/material'
+import { Container, Typography, TextField, Button, Grid } from '@mui/material'
 import Tema from '../../../models/Tema';
 import { useNavigate, useParams } from 'react-router-dom';
 import { buscaId, post, put } from '../../../services/Service';
@@ -85,15 +85,17 @@ function cadastroTema() {
 
 
     return (
-        <Container maxWidth="sm" className="topo">
-            <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >{tema.id !== 0 ? 'Editar tema' : 'Cadastrar tema'}</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" className='botao'>
-                    Finalizar
-                </Button>
-            </form>
-        </Container>
+        <Grid marginTop={12} >
+            <Container maxWidth="sm" className="topo">
+                <form onSubmit={onSubmit}>
+                    <Typography variant="h3" color="textSecondary" component="h1" align="center" >{tema.id !== 0 ? 'Editar tema' : 'Cadastrar tema'}</Typography>
+                    <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
+                    <Button type="submit" variant="contained" className='botao'>
+                        Finalizar
+                    </Button>
+                </form>
+            </Container>
+        </Grid>
     )
 }
 

@@ -5,13 +5,14 @@ import Postagem from '../../../models/Postagens';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import './DeletarPostagem.css'
 
 function DeletarPostagem() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
     const [post, setPosts] = useState<Postagem>()
 
     useEffect(() => {
@@ -52,7 +53,7 @@ function DeletarPostagem() {
     return (
         <>
             <Box m={2}>
-                <Card variant="outlined" >
+                <Card variant='elevation' elevation={10}>
                     <CardContent>
                         <Box justifyContent="center">
                             <Typography color="textSecondary" gutterBottom>
@@ -67,12 +68,12 @@ function DeletarPostagem() {
                     <CardActions>
                         <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
                             <Box mx={2}>
-                                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                                <Button onClick={sim} variant="contained" size='large' color="primary" className="botaoDeletar">
                                     Sim
                                 </Button>
                             </Box>
                             <Box>
-                                <Button onClick={nao} variant="contained" size='large' color="secondary">
+                                <Button onClick={nao} variant="contained" size='large' color="secondary" className='botaoVoltar'>
                                     Não
                                 </Button>
                             </Box>

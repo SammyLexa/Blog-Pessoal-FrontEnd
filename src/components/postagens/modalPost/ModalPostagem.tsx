@@ -60,7 +60,6 @@ function ModalPostagem() {
     return (
         <div>
             <Button
-                variant="outlined"
                 className="botaoModal"
                 onClick={handleOpen}>Nova Postagem</Button>
             <Modal
@@ -68,6 +67,7 @@ function ModalPostagem() {
                 onClose={handleClose}
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
+                
             >
                 {body}
             </Modal>

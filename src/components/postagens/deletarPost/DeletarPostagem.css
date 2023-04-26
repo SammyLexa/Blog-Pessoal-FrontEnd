@@ -1,0 +1,7 @@
+.botaoDeletar {
+    background-color: red !important;
+}
+
+.botaoVoltar {
+    background-color: var(--cor-destaque) !important;
+}
