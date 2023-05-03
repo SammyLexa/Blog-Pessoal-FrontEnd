@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import './cadastroTema.css'
+import './CadastroTema.css'
 import { Container, Typography, TextField, Button, Grid } from '@mui/material'
 import Tema from '../../../models/Tema';
 import { useNavigate, useParams } from 'react-router-dom';
